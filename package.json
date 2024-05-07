@@ -1,5 +1,5 @@
 {
-  "name": "corgi-ui",
+  "name": "testdog-corgi-ui",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/cjs/index.js",
@@ -10,6 +10,9 @@
     "url": "git+https://github.com/ottovenliu/corgi-ui.git"
   },
   "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "test": "jest --config jestconfig.json",
     "eslintInit": "eslint --init",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
