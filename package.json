@@ -5,6 +5,10 @@
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ottovenliu/corgi-ui.git"
+  },
   "scripts": {
     "test": "jest --config jestconfig.json",
     "eslintInit": "eslint --init",
@@ -13,8 +17,20 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run prettier && npm run lint"
   },
-  "keywords": [],
-  "author": "",
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "react",
+    "typescript",
+    "awesome-project"
+  ],
+  "author": "ottovenliu(ottovenliu)",
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^9.2.0",
