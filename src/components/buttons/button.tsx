@@ -1,26 +1,24 @@
-import React, { useState } from 'react'
-
-type Props = {
-  value?: number
-}
-const MyCounter = ({ value = 0 }: Props) => {
-  const [counter, setCounter] = useState(value)
-
-  const onMinus = () => {
-    setCounter((prev) => prev - 1)
-  }
-
-  const onPlus = () => {
-    setCounter((prev) => prev + 1)
-  }
-
+import React from 'react'
+// import React, { useState } from 'react'
+import { iButton } from '../../interfaces/buttons/button.interface'
+import './buttons.scss'
+const CorgiButton = ({
+  content: content = undefined,
+  onClick = () => {
+    console.log('you click the CorgiButton!')
+  },
+  iconPosition: iconPosition = undefined,
+  icon: icon = undefined,
+  disabled: disabled = false,
+  type: type = 'Primary',
+}: iButton) => {
   return (
-    <div>
-      <h1>Counter: {counter}</h1>
-      <button onClick={onMinus}>-</button>
-      <button onClick={onPlus}>+</button>
-    </div>
+    <button className={'cButton ' + type + `${disabled ? ' Disabled' : ' '}`} disabled={disabled} onClick={onClick}>
+      {iconPosition === 'left' ? icon : null}
+      {content}
+      {iconPosition === 'right' ? icon : null}
+    </button>
   )
 }
 
-export default MyCounter
+export default CorgiButton

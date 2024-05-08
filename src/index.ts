@@ -1,3 +1,3 @@
-import MyCounter from './components/buttons/button'
+import CorgiButton from './components/buttons/button'
 
-export { MyCounter }
+export { CorgiButton }
