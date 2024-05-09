@@ -1,7 +1,7 @@
 import React from 'react'
 // import React, { useState } from 'react'
 import { iButton } from '../../interfaces/buttons/button.interface'
-import './buttons.scss'
+import '../../styles/buttons.css'
 const CorgiButton = ({
   content: content = undefined,
   onClick = () => {
@@ -13,7 +13,7 @@ const CorgiButton = ({
   type: type = 'Primary',
 }: iButton) => {
   return (
-    <button className={'cButton ' + type + `${disabled ? ' Disabled' : ' '}`} disabled={disabled} onClick={onClick}>
+    <button className={'cButton' + `${' ' + type}` + `${disabled ? ' Disabled' : ' '}`} disabled={disabled} onClick={onClick}>
       {iconPosition === 'left' ? icon : null}
       {content}
       {iconPosition === 'right' ? icon : null}

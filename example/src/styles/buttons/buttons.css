@@ -1,0 +1,72 @@
+.cButton {
+    min-height: 36px;
+    min-width: 30px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 2.5em;
+    border-radius: 4px;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+    font-family:'Noto Sans', sans-serif;
+}
+
+.cButton.Primary {
+    background-color: #019CB0;
+    transition: easa-in-out 1000ms;
+}
+
+.cButton.Primary:hover {
+    background-color: #00B8D9;
+    transition: easa-in-out 1000ms;
+
+}
+
+.cButton.Destructive {
+    background-color: #D01322;
+    transition: easa-in-out 300ms;
+}
+.cButton.Destructive:hover {
+    background-color: #F44336;
+    transition: easa-in-out 300ms;
+}
+
+.cButton.Safe {
+    background-color: #389E0D;
+    transition: easa-in-out 300ms;
+}
+.cButton.Safe:hover {
+    background-color: #4CAF50;
+    transition: easa-in-out 300ms;
+}
+
+
+.cButton.Warning {
+    background-color: #D48906;
+    transition: easa-in-out 300ms;
+
+}
+.cButton.Warning:hover {
+    background-color: #FF9800;
+    transition: easa-in-out 300ms;
+
+}
+
+
+.cButton.Info {
+    background-color: #0959D9;
+    transition: easa-in-out 300ms;
+
+}
+.cButton.Info:hover {
+    background-color: #2196F3;
+    transition: easa-in-out 300ms;
+
+}
+
+
+.cButton.Disabled {
+    cursor: default;
+    pointer-events: none;
+}

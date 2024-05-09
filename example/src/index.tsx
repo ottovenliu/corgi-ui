@@ -12,7 +12,11 @@ root.render(
     <hr />
     <div>
       <h2>Destructive Btn</h2>
-      <CorgiButton type='Destructive' content='Corgi is so cute~!!' />
+      <div style={{ display: 'flex',width: '100%' }}>
+        <div style={{ margin: '5px' }}>
+          <CorgiButton type='Destructive' content='Corgi is so cute~!!' />
+        </div>
+      </div>
     </div>
     <hr />
     <div>
