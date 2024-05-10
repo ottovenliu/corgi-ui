@@ -3,7 +3,7 @@
   "exclude": ["dist", "node_modules"],
   "compilerOptions": {
     "module": "esnext",
-    "types": ["node", "jest", "babel__core", "babel__generator", "babel__template", "json-schema"],
+    "types": ["node", "jest", "json-schema"],
     "lib": ["dom", "esnext"],
     "importHelpers": true,
     "declaration": true,
