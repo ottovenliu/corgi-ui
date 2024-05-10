@@ -1,7 +1,7 @@
 import React from 'react'
 // import React, { useState } from 'react'
 import { iButton } from '../../interfaces/buttons/button.interface'
-import '../../styles/buttons/buttons.css'
+import '../../styles/buttons/index.css'
 const CorgiButton = ({
   content: content = undefined,
   onClick = () => {
